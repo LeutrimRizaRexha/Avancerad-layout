@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    background-color: #e8d7ca;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1600px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #e8d7ca;
+    padding-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 15px;
+}
+
+header nav a {
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #e8d7ca;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: gray;
+}
+
+/* Headlines (start) */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 80%;
+    gap: 3px;
+    padding-top: 10px;
+}
+
+.image {
+    max-width: 90%;
+}
+
+p {
+    max-width: 90%;
+}
+
+/* Headlines (end) */
+
+/* Contact (start) */
+form {
+    width: 70%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+fieldset {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.personalf {
+    padding: 5%;
+}
+
+.customf {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.boxanswere {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    padding: 5px;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.submit-button {
+    width: 20%;
+    min-width: 50px;
+    background-color: white;
+}
+
+.submit-button:hover {
+    background-color: rgb(144, 243, 144);
+}
+
+/* Contact (end) */
+
+footer {
+    background-color: black;
+    color: #e8d7ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+img[src="sun.webp"] {
+    height: 4vh;
+}
+
+@media (min-width: 600px) {
+
+    header nav {
+        flex-direction: row;
+    }
+
+    .article-div {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        margin: 0px 20px 10px 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .submit-button-container {
+        display: flex;
+        justify-self: center;
+        margin-bottom: 5px;
+    }
+}
